@@ -1,0 +1,10 @@
+<!--components/preview/index.wxml-->
+<!-- <view catch:tap="onTap" class="container"> -->
+<view class="container">
+  <view class="head">
+    <v-tag text="{{typeText}}" tag-class="tag" />
+    <v-like class="like" read-only="{{true}}" like="{{true}}" count="{{classics.fav_nums}}" />
+  </view>
+  <image class="{{classics.type==200?'music-img':'other-img'}}" src="{{classics.image}}"></image>
+  <view class="text">{{classics.content}}</view>
+</view>

@@ -1,0 +1,19 @@
+<!--pages/about/about.wxml-->
+<view class="container">
+  <view class="text">
+    <text>本小程序是仿七月老师的《旧岛》小程序,运行环境为微信开发者工具，其中的素材来源于林间有风，网址为：http://www.7yue.pro/course。</text>
+    <text>在项目开发过程中，对wxml的生命周期/API调用/组件化开发都有了较深层次的理解。具体get的技能大致分为：前端页面布局（主要是flex布局）、CSS（其中的动画/选择器/浏览器优先级/自定义开源组件等）、ES6相关特性（主要是promise/箭头函数/异常处理/函数回调/this指向等）——具体见下图,可长按图片进行保存</text>
+  </view>
+
+  <!-- 轮播图 -->
+  <view class='index-top' wx:key="key">
+    <swiper indicator-dots autoplay interval="5000" duration="1000" indicator-color="#f8f8f8" indicator-active-color="#dean8a" vertical circular>
+    <block wx:for="{{imgData}}" wx:for-item="image" wx:key="key">
+        <swiper-item>
+          <image src="{{image}}" data-src="{{image}}" bindtap="previewImage" class="slide-image w100" mode="scaleToFill"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+</view>

@@ -1,0 +1,8 @@
+<!--components/like/index.wxml-->
+<view bind:tap="onLike" class="container">
+
+  <image src="{{like ? yesSrc : noSrc}}" lazy-load="true" mode="aspectFit"></image>
+
+  <text class="like-num">{{count}}</text>
+
+</view>

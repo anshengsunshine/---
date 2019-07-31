@@ -1,0 +1,51 @@
+/* pages/index/index.wxss */
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: cloumn;
+  align-content: center;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100rpx;
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.epsoie {
+  margin-left: 20rpx;
+  margin-top: 4rpx;
+}
+
+.like {
+  margin-top: 6rpx;
+}
+
+.navi {
+  position: absolute;
+  bottom: 40rpx;
+}
+
+.like-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30rpx;
+}
+
+/* .share-btn {
+  margin-top: 10rpx !important;
+  margin-left: 10rpx !important;
+} */
+
+.share {
+  width: 40rpx;
+  height: 40rpx;
+}
